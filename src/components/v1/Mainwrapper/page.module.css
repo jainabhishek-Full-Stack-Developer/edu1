@@ -1,0 +1,50 @@
+.adminPanel {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.headerBox {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 40px;
+    z-index: 10;
+}
+
+.contentBox {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    flex-grow: 1;
+}
+
+.footerBox {
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    height: 40px;
+    z-index: 0;
+}
+
+@media all and (max-width:768px) {
+
+    .headerBox,
+    .footerBox {
+        left: 0px !important;
+    }
+
+}

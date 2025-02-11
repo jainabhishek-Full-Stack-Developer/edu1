@@ -1,0 +1,118 @@
+.footer {
+    background-color: var(--text-black);
+    color: white;
+    padding: 60px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerSection {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.footerSection h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--main-bgcolor);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footerSection p,
+.footerSection ul li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.footerSection ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footerSection ul li {
+    margin-bottom: 12px;
+}
+
+.footerSection ul li a {
+    text-decoration: none;
+    color: var(--text-gray);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footerSection ul li a:hover {
+    color: var(--main-bgcolor);
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.socialIcons a {
+    font-size: 1.7rem;
+    color: var(--text-gray);
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: var(--main-bgcolor);
+    transform: scale(1.1);
+}
+
+.footerBottom {
+    background-color: none;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    color: var(--text-gray);
+    margin-top: 40px;
+    border-top: 1px solid var(--main-bgcolor);
+}
+
+.footerBottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerSection {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footerSection h3 {
+        font-size: 1.6rem;
+    }
+
+    .footerSection p,
+    .footerSection ul li {
+        font-size: 1rem;
+    }
+
+    .footerBottom {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}

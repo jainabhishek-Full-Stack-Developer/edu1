@@ -1,0 +1,87 @@
+.dashboardCard {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 230px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+/* Ensuring icons adjust well in smaller screens */
+.dashboardCardIcon {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dashboardCardInfo {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.dashboardCardTitle {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+}
+
+.dashboardCardValue {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboardCard {
+        width: 100%;
+        max-width: none;
+        padding: 12px;
+        justify-content: space-between;
+    }
+
+    .dashboardCardIcon {
+        margin-right: 10px;
+    }
+
+    .dashboardCardTitle {
+        font-size: 12px;
+    }
+
+    .dashboardCardValue {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboardCard {
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .dashboardCardIcon {
+        margin: 0 0 10px 0;
+    }
+
+    .dashboardCardTitle {
+        font-size: 11px;
+    }
+
+    .dashboardCardValue {
+        font-size: 18px;
+    }
+
+    .dashboardCardInfo {
+        margin-left: 15px;
+    }
+}

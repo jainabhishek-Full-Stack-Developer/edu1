@@ -1,0 +1,95 @@
+.studentPannelSideMenu {
+    width: 200px;
+    background-color: #f8f8f8e9;
+    color: var(--text-black);
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.studentPannelSideMenu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.studentPannelSideMenu::-webkit-scrollbar-thumb {
+    background: #e2e2e2;
+    border-radius: 4px;
+}
+
+.studentPannelSideMenu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.studentPannelBrandSection {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.studentPannelDashboardLink {
+    background-color: var(--main-color);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 5px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.studentPannelDashboardLink a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+.studentPannelSubMenuContainer {
+    margin-bottom: 50px;
+    padding: 0px 10px;
+}
+
+/* side bar */
+.dashboardTitle {
+    font-size: 16px;
+    color: var(--text-black);
+    text-transform: capitalize;
+    padding: 10px 0px 0px 10px;
+
+}
+
+.dashboardTitle:last-child {
+    margin-bottom: 50px !important;
+}
+
+.dashboardTitle a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dashboardTitle a .icon {
+    color: var(--text-black);
+    padding: 5px;
+    font-size: 30px;
+}
+
+.dashboardTitle a span {
+    margin-left: 10px;
+}
+
+.stduentPannelLogo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+@media all and (max-width:768px) {
+    .studentPannelSideMenu
+    {
+        display: none;
+    }
+    
+}

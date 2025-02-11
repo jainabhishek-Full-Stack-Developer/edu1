@@ -1,0 +1,192 @@
+/* Responsive Form Styles */
+.formBox {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+    /* Full width on small screens */
+    max-width: 50%;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .inputGroup {
+        max-width: 100%;
+        /* Stack input fields on small screens */
+    }
+}
+
+.inputGroup label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus,
+.inputGroup textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Button */
+.submitBtn {
+    text-align: right;
+    margin-top: 0.9rem;
+}
+
+.submitBtn button {
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.submitBtn button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .submitBtn {
+        text-align: center;
+    }
+
+    .submitBtn button {
+        width: 100%;
+    }
+}
+
+/* Responsive Table */
+.tableContainer {
+    margin: 0 auto;
+    overflow-x: auto;
+    margin-top: 50px;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tableContainer th,
+.tableContainer td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.tableContainer th {
+    background-color: #dddddd;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tableContainer tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tableContainer tr:hover {
+    background-color: #d6e9ff;
+    transition: 0.3s;
+}
+
+.tableContainer td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Table Buttons */
+.tableActiveBtn,
+.tableDeactiveBtn,
+.tableEditBtn,
+.tableDeleteBtn {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tableActiveBtn {
+    color: var(--text-green);
+}
+
+.tableDeactiveBtn,
+.tableDeleteBtn {
+    color: var(--text-red);
+}
+
+.tableEditBtn {
+    color: var(--text-blue);
+}
+
+/* Adjust table for small screens */
+@media (max-width: 768px) {
+    .tableContainer table {
+        font-size: 14px;
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tableContainer table {
+        font-size: 12px;
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        padding: 8px;
+    }
+
+    .tableActiveBtn,
+    .tableDeactiveBtn,
+    .tableEditBtn,
+    .tableDeleteBtn {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+.formUpdateHeading {
+    margin-bottom: 15px;
+}

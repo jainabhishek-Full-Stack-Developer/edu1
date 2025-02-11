@@ -1,0 +1,183 @@
+/* ✅ Form Styling */
+.formBox {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ✅ Form Title */
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0 1rem;
+}
+
+/* ✅ Form Input Groups */
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 48%; /* Adjusts dynamically */
+    margin: 5px;
+}
+
+.inputGroup label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+.inputGroup input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.inputGroup input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* ✅ Submit Button */
+.submitBtn {
+    text-align: right;
+    width: 100%;
+}
+
+.submitBtn button {
+    padding: 0.8rem 1.5rem;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.submitBtn button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ✅ Responsive Form */
+@media (max-width: 768px) {
+    .formBox {
+        flex-direction: column;
+    }
+
+    .inputGroup {
+        width: 100%;
+    }
+
+    .submitBtn {
+        text-align: center;
+    }
+}
+
+/* ✅ Table Styling */
+.tableContainer {
+    margin: 0 auto;
+    overflow-x: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+/* ✅ Table */
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 600px; /* Prevents content from getting squished */
+}
+
+/* ✅ Table Headings */
+.tableContainer th,
+.tableContainer td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.tableContainer th {
+    background-color: #dddddd;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tableContainer tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tableContainer tr:hover {
+    background-color: #d6e9ff;
+    transition: 0.3s;
+}
+
+.tableContainer td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* ✅ Scrollable Table for Small Screens */
+@media (max-width: 768px) {
+    .tableContainer {
+        overflow-x: auto;
+    }
+
+    .tableContainer table {
+        min-width: 600px;
+    }
+}
+
+/* ✅ Action Buttons */
+.tableActiveBtn,
+.tableDeactiveBtn,
+.tableEditBtn,
+.tableDeleteBtn {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.tableActiveBtn {
+    color: var(--text-green);
+}
+
+.tableDeactiveBtn,
+.tableDeleteBtn {
+    color: var(--text-red);
+}
+
+.tableEditBtn {
+    color: var(--text-blue);
+}
+
+/* ✅ Hover Effect */
+.tableActiveBtn:hover,
+.tableDeactiveBtn:hover,
+.tableEditBtn:hover,
+.tableDeleteBtn:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ Form Update Heading */
+.formUpdateHeading {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #444;
+}

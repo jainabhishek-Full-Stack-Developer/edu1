@@ -1,0 +1,214 @@
+/* Centering the login wrapper */
+.loginWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Login box styling */
+.loginWrapperBox {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Margin for inner elements */
+.loginWrapperBox div {
+    margin-bottom: 20px;
+}
+
+/* Heading styles */
+.loginWrapperHeading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Description text */
+.loginDescription {
+    font-size: 16px;
+    color: #666;
+    margin-top: -15px;
+}
+
+/* Input container with icon */
+.inputContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling */
+.inputIcon {
+    position: absolute;
+    left: 14px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* Input field */
+.inputField {
+    width: 100%;
+    padding: 12px 16px 12px 42px; /* Extra left padding for icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Placeholder color */
+.inputField::placeholder {
+    color: #888;
+}
+
+/* Focus effect */
+.inputField:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Change icon color on focus */
+.inputContainer:focus-within .inputIcon {
+    color: var(--main-color);
+}
+
+/* Button styling */
+.loginBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Button hover effect */
+.loginBtn:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 6px 8px rgba(0, 86, 179, 0.3);
+}
+
+/* Button active state */
+.loginBtn:active {
+    background-color: var(--main-color);
+    transform: scale(0.98);
+}
+
+/* Disabled button */
+.loginBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.errorMsg
+{
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .loginWrapperBox {
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .loginWrapperHeading {
+        font-size: 26px;
+    }
+
+    .loginDescription {
+        font-size: 15px;
+    }
+
+    .inputField {
+        font-size: 15px;
+        padding: 10px 14px 10px 40px;
+    }
+
+    .loginBtn {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginWrapperBox {
+        width: 90%;
+        max-width: 320px;
+        padding: 18px;
+    }
+
+    .loginWrapperHeading {
+        font-size: 24px;
+    }
+
+    .loginDescription {
+        font-size: 14px;
+    }
+
+    .inputField {
+        font-size: 14px;
+        padding: 10px 12px 10px 38px;
+    }
+
+    .loginBtn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginWrapper {
+        padding: 15px;
+    }
+
+    .loginWrapperBox {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .loginWrapperHeading {
+        font-size: 22px;
+    }
+
+    .loginDescription {
+        font-size: 13px;
+    }
+
+    .inputField {
+        font-size: 14px;
+        padding: 10px 12px 10px 36px;
+    }
+
+    .loginBtn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

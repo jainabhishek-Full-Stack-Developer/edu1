@@ -1,0 +1,191 @@
+.studentList {
+    list-style: none;
+    padding: 0;
+}
+
+.studentItem {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.studentItem strong {
+    color: #333;
+}
+
+/* input search box */
+
+.tableSearchContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.tableSearchContainer .inputField {
+    width: 20%;
+    padding: 10px !important;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+
+.tableSearchContainer .inputField::placeholder {
+    color: #888;
+}
+
+.tableSearchContainer .inputField:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.tableSearchContainer .inputContainer:focus-within .inputIcon {
+    color: var(--main-color);
+}
+
+
+/* table css */
+.tableContainer {
+
+    margin: 0 auto;
+    overflow-x: auto;
+    margin-top: 50px;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tableContainer th,
+.tableContainer td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.tableContainer th {
+    background-color: #dddddd;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tableContainer tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tableContainer tr:hover {
+    background-color: #d6e9ff;
+    transition: 0.3s;
+}
+
+.tableContainer td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* table btn */
+.tableActiveBtn {
+
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    cursor: pointer;
+    color: var(--text-green);
+    font-size: 16px;
+}
+
+.tableDeactiveBtn {
+
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    cursor: pointer;
+    color: var(--text-red);
+    font-size: 16px;
+}
+
+.tableEditBtn {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    cursor: pointer;
+    color: var(--text-blue);
+
+}
+
+.tableDeleteBtn {
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0px 10px;
+    cursor: pointer;
+    color: var(--text-red);
+}
+
+.formUpdateHeading {
+    margin-bottom: 15px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .inputGroup {
+        width: 100%;
+    }
+
+    .formBox {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .submitBtn {
+        text-align: center;
+    }
+
+    .submitBtn button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tableContainer table {
+        font-size: 14px;
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        padding: 10px;
+    }
+
+    .tableContainer {
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    .tableContainer table {
+        font-size: 12px;
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        padding: 8px;
+    }
+
+    .submitBtn button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}

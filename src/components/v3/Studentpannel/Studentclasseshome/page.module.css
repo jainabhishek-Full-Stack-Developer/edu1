@@ -1,0 +1,135 @@
+.allClassesFilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.allClassesFilter div {
+
+    margin-right: 0.6rem;
+}
+
+.allClassesFilter span {
+    margin-right: 0.4rem;
+}
+
+.allClassesFilter input {
+    padding: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.allClassesFilter input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+.allClassesFilter button {
+
+    padding: 0.4rem;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.allClassesFilter button:hover {
+    background: #0056b3;
+}
+
+.cardClasses {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.cardClasses:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.classesContent {
+    text-align: center;
+}
+
+.classesCardTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.classesCardTeacher,
+.classesCardTime {
+    font-size: 14px;
+    color: #222;
+}
+
+.classesCradStatus {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+
+.classesCardOpen {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.classesCardClosed {
+    background-color: #D32F2F;
+    color: #fff;
+}
+
+.classesTypeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.classesType {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 12px;
+    background-color: #001aff;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .cardClasses {
+        width: 250px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardClasses {
+        width: 100%;
+        text-align: center;
+    }
+
+    .classesTypeSection {
+        justify-content: center;
+    }
+}
