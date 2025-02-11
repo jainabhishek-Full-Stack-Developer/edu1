@@ -1,4 +1,4 @@
-import Teachercoursecontent from "@/components/v1/v2/Teacherpannel/Teachercoursecontent/Teachercoursecontent";
+import Teachercoursecontent from "@/components/v2/Teacherpannel/Teachercoursecontent/Teachercoursecontent";
 
 const Manageteachercourse = () => {
     return (

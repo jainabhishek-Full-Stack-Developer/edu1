@@ -1,4 +1,4 @@
-import Teachernewpasscontent from "@/components/v1/v2/Teachernewpasscontent/Teachernewpasscontent";
+import Teachernewpasscontent from "@/components/v2/Teachernewpasscontent/Teachernewpasscontent";
 
 const Teachernewpassword = () => {
     return (

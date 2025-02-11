@@ -1,4 +1,4 @@
-import Teacherforgetpasscontent from "@/components/v1/v2/Teacherforgetpasscontent/Teacherforgetpasscontent";
+import Teacherforgetpasscontent from "@/components/v2/Teacherforgetpasscontent/Teacherforgetpasscontent";
 
 const Teacherforgetpassword = () => {
     return (

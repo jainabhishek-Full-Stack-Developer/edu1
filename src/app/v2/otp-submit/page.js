@@ -1,4 +1,4 @@
-import Teacherotpcontent from '@/components/v1/v2/Teacherotpcontent/Teacherotpcontent';
+import Teacherotpcontent from '@/components/v2/Teacherotpcontent/Teacherotpcontent';
 
 const Teacherotpsubmit = () => {
     return (

@@ -1,4 +1,4 @@
-import Teacherloginhome from "@/components/v1/v2/Teacherloginhome/Teacherloginhome";
+import Teacherloginhome from "@/components/v2/Teacherloginhome/Teacherloginhome";
 
 const Teacherlogin = () => {
     return (
